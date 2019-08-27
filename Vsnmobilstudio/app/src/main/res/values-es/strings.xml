@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">V.ALRT</string>
+    <string name="ble_not_supported">Bluetooth LE no es compatible con este teléfono</string>
+    <string name="next">Sig.\u0020</string>
+    <string name="back">\u0020Atrás</string>
+    <string name="service_running">Aplicación en funcionamiento.</string>
+    <string name="bluetooth_off">Se necesita bluetooth activado para el funcionamiento del V.ALRT.</string>
+    <string name="connecting">Conectando</string>
+    <string name="connected">Conectado</string>
+    <string name="notconnected">Desconectado</string>
+
+    <!-- Notification Messages -->
+    <string name="sending_sms_to_contact">Alerta en Progreso</string>
+    <string name="location_disabled">Servicio de localización desactivado.</string>
+    <string name="need_data_connection">Necesita conexión de DATOS para que V.ALRT funcione correctamente.</string>
+    <string name="reconncet_notification">esta desconectado, por favor localícelo y reconéctelo</string>
+    <string name="upgrade_relaunch_app">Por favor active la aplicación V.ALRT para asegurar que está funcionando.</string>
+    <string name="fall_detected_notification">Caída Detectada</string>
+    <!-- Welcome screen -->
+    <string name="welcome">Bienvenido</string>
+    <string name="terms_conditions">Términos y Condiciones</string>
+    <string name="terms_conditions_heading">Condiciones</string>
+    <string name="terms_plus_conditions">Condiciones</string>
+    <string name="accept_tnc">Por favor Lea y Acepte los Términos y Condiciones.</string>
+    <string name="not_internet_connection">No hay conexión a Internet </string>
+
+    <!-- Agreement Screen -->
+    <string name="agreement">Acuerdo</string>
+    <string name="locationservice_agreement">Activar el Modo de Ubicación en Alta Precisión para garantizar que el V.ALRT funciona adecuadamente.</string>
+    <string name="agreement_note_url">file:///android_asset/valert_agreement_spanish.html</string>
+    <!-- Help Screen -->
+    <string name="help">Ayuda</string>
+    <string name="quick_start_guide">Guía Rápida</string>
+    <string name="product_information">Producto</string>
+    <string name="product_information_title">Producto</string>
+    <string name="about_vsn">Acerca VSN</string>
+    <string name="instructional_video">Video Descriptivo</string>
+    <string name="faq">Preguntas Frecuentes</string>
+    <string name="faq_heading">Preguntas</string>
+    <!-- Help List -->
+    <string name="product_info_text1">Información del V.ALRT </string>
+    <string name="product_info_text2">Versión de la Aplicación:</string>
+    <string name="about_vsn_text">VSN Mobil fue creado con el claro objetivo de traer un enfoque refrescante al espacio de la electrónica de consumo y entregar dispositivos que satisfacen las necesidades reales para el mundo real. El grupo humano de VSN Mobil tiene más de 200 patentes mundiales en su haber y patentes adicionales pendientes.</string>
+    <string name="moreinfo">Para más información visítenos en</string>
+
+    <!-- Scan -->
+    <string name="devices">Conexión V.ALRT</string>
+    <string name="no_devices_found">No se han encontrado dispositivos.</string>
+    <string name="you_have_no_paired_device">Actualmente no tiene un dispositivo conectado.</string>
+    <string name="available_devices">Paso 2 - Selecciona un V.ALRT</string>
+    <string name="hand_img_title">Paso 1 – Activar mi V.ALRT</string>
+    <string name="hand_img_text">Mantén presionado por cerca de 10 segundos hasta que el V.ALRT suene y se ilumine en verde, y en este momento libera el botón para finalizar la conexión.</string>
+
+    <!-- Dashboard activity -->
+    <string name="device_name">Mi Dispositivo</string>
+    <string name="find_me">Encontrar V.ALRT </string>
+    <string name="change_name">Cambiar Nombre</string>
+    <string name="forget_me">Remover</string>
+    <string name="fall_detection">Detección de Caída</string>
+    <string name="disconnected">Desconectado</string>
+    <string name="add_contact">Añadir contacto</string>
+    <string name="save">Guardar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="ok">Aceptar</string>
+    <string name="valid_contact">Introduzca un número de teléfono válido\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020</string>
+    <string name="are_you_sure_forget_device"> Olvidar este dispositivo?</string>
+    <string name="device_name_changed_successfully">Nombre del dispositivo cambiado </string>
+    <string name="unable_to_change_name">No se pudo cambiar el nombre</string>
+    <string name="disable_falldetect_header">Está seguro que desea desactivar la detección de caída para este dispositivo?</string>
+    <string name="are_you_sure_enable_falldetection">La precisión en la detección de caída depende de diversos factores como la naturaleza de la caída y la forma como V.ALRT es sostenido. Las pruebas han demostrado que funciona mejor si se utiliza V.ALRT con el Clip o el colgante. 
+Para obtener mejores resultados siempre presione el botón de alerta por 2 ~ 8 segundos. ¿Quiere habilitar la detección de caída?</string>
+    <string name="falldetect_status">Detección de Caída\u0020</string>
+    <string name="no">No</string>
+    <string name="yes">Sí</string>
+
+    <!-- FallDetectDialog -->
+    <string name="fall_detected">Caída Detectada\u0020&#x21;</string>
+    <string name="seconds">\u0020segundos&#8230;</string>
+
+    <!-- congurlation activity -->
+    <string name="done">Listo\u0020</string>
+    <string name="congratulations">Felicitaciones&#x21;&#x21;&#x21;</string>
+    <string name="valert_setup">Tu V.ALRT está configurado\u0020&#x21;</string>
+    <string name="content_one">Antes de continuar, te recomendamos realizar una prueba para asegurar que está funcionando correctamente.</string>
+    <string name="content_two">Notifica a tus contactos que van a recibir una llamada y/o un SMS antes de presionar el botón de alerta en tu V.ALRT.</string>
+    <string name="content_three">Para activar la alerta simplemente presiona el botón por 2 segundos y lo sueltas, tus contactos serán notificados en cuestión de segundos.</string>
+    <!-- Home activity -->
+    <string name="my_device">Mi Dispositivo</string>
+    <string name="manage_devices">Administrar\nDispositivo</string>
+    <string name="manage_device">Administrar Dispositivo</string>
+    <string name="home_help">Ayuda\n\u0020</string>
+    <string name="enabled">Activado</string>
+    <string name="disabled">Desactivado</string>
+    <string name="no_device_connected"> No hay ningún dispositivo conectado.</string>
+
+    <!-- AlertProgress Activity -->
+
+    <string name="sms">Envío de SMS a</string>
+    <string name="alert_call">Llamando a</string>
+    <string name="alert_called">llamado</string>
+    <string name="sample_phnumber">+910000000000</string>
+    <string name="cancelall">Cancelar</string>
+    <string name="alert_in_progress">Alerta en Progreso&#x21;</string>
+    <string name="no_contacts">Define un Contacto con mensaje o llamada para enviar la Alerta.</string>
+
+    <!-- Settings activity -->
+    <string name="settings">Mi Configuración</string>
+    <string name="valrt_settings">Configuración</string>
+    <string name="alert_message">Mensaje de alerta</string>
+    <string name="tap_to_add_contact">Añadir contacto</string>
+    <string name="no_contatct_added">Por favor añada un contacto primero</string>
+    <string name="no_phonenumber_incontacts">No hay número de teléfono en el contacto seleccionado</string>
+    <string name="available_tones">Timbres disponibles</string>
+    <string name="contacts">Contactos</string>
+    <string name="alert_sound">Alerta de sonido</string>
+    <string name="alert_msg_content"> Este es el mensaje que se enviará en caso de alerta.</string>
+    <string name="silent_mode_static">Modo Silencioso</string>
+    <string name="valert_devices">V.ALRT</string>
+    <string name="phone_application">Teléfono</string>
+    <string name="sure_remove_contact">Está seguro que desea eliminar el contacto seleccionado?</string>
+    <string name="accurate_location_unavailable">\u0020 Mi ubicación no está disponible</string>
+    <string name="message">Mensaje</string>
+    <string name="tap_to_message">Complete mensaje </string>
+    <string name="alert_msg_empty">Mensaje de alerta no debe estar vacío</string>
+    <!-- History Log -->
+    <string name="history_device_connected">Conectado</string>
+    <string name="history_device_falldetect">Caída Detectada</string>
+    <string name="history_device_keypressed">Botón de Alerta activado</string>
+    <string name="history_fall_enable">Detección de caída activado</string>
+    <string name="history_fall_disable">Detección de caída desactivado</string>
+    <string name="historylog">Registro Histórico</string>
+    <string name="nohistorylog"> No existe registro histórico </string>
+    <string name="history_text_message_not_sent">Mensaje de prueba falle.</string>
+    <string name="history_text_message_sent">Mensaje de prueba enviada.</string>
+    <string name="history_tracker_loud_tone_on">Tono de timbre del Rastreador activado</string>
+    <string name="history_tracker_loud_tone_off">Tono de timbre del Rastreador desactivado</string>
+    <string name="history_tracker_vibrate_on">Vibración del Rastreador activado</string>
+    <string name="history_tracker_vibrate_off">Vibración del Rastreador desactivado</string>
+    <string name="history_application_silentmode_on">Modo Silencioso de la aplicación activado</string>
+    <string name="history_application_silentmode_off">Modo Silencioso de la aplicación desactivado</string>
+    <string name="history_device_silentmode_on">Modo Silencioso en el V.ALRT activado</string>
+    <string name="history_device_silentmode_off">Modo Silencioso en el V.ALRT desactivado</string>
+    <!-- Find me activity -->
+    <string name="find_me_heading">Encontrar V.ALRT</string>
+    <string name="done_findme">Listo\u0020</string>
+    <string name="your_valrt_blink_and_beep">Tu V.ALRT emitirá un sonido y parpadeará durante 20 seg.</string>
+    <!-- Extra added -->
+    <string name="changename_length_warning">Nombre del dispositivo no puede estar vacio </string>
+    <string name="changename_device_exists">Nombre ya existe </string>
+    <string name="productinfo_device_name">Nombre del Dispositivo: </string>
+    <string name="productinfo_serial_number">Número de Serie:</string>
+    <string name="productinfo_software_version">Versión de Software:</string>
+    <string name="low_battery">Batería Baja</string>
+    <string name="bluetooth_enabled">BlueTooth Activado</string>
+    <!-- personal info -->
+    <string name="phone_number_with_area_code">Número telefónico con código de área</string>
+    <!-- Added -->
+    <string name="personal_info_add">Adicionar</string>
+    <string name="personal_info_edit">Editar</string>
+    <string name="personal_info">Datos Personales</string>
+    <string name="name">Nombre</string>
+    <string name="enter_mobile_number">Escribe tu número de celular #</string>
+    <string name="alert_setting_info_required">Se requiere la información personal, el texto del mensaje y por lo menos un contacto.</string>
+    <string name="from">De</string>
+    <string name="valrt_emergency">V.ALRT Notificacion</string>
+    <string name="valrt_fall">V.ALRT Caida</string>
+    <string name="location_to_follow">\u0020A continuacion envio mi ubicacion actual.\u0020</string>
+    <string name="my_estimated_location">Estoy ubicado aproximadamente en</string>
+    <string name="additional_requirement_title"> Requerimientos adicionales para el correcto funcionamiento del V.ALRT:</string>
+    <string name="valrt_paired_devices">V.ALRT</string>
+    <string name="product_reference">Modelo: VSN 400</string>
+    <string name="enter_valid_name">Un nombre válido es necesario</string>
+    <string name="pls_forget_device">Por favor olvide el V.ALRT existente para conectar uno nuevo.</string>
+    <string name="please_wait_a_moment">Por favor espere un momento e intente de nuevo. </string>
+    <string name="enable_falldetect_header">Activar detección de caída?</string>
+    <string name="tutor_info_time">10 segundos</string>
+    <!-- Don't Need to Convert -->
+    <string name="agreement_url">http://www.vsnmobil.com/valrt/manuals/tandc/spanish/</string>
+    <string name="quick_start_link">http://vsnmobil.com/valrt/manuals/VAlrt_quick_start.pdf</string>
+    <string name="instruction_video_link">http://www.vsnmobil.com/valrt/box/insvideo/spanish/insvideospanish.mp4</string>
+    <string name="product_info_link">http://vsnmobil.com</string>
+    <string name="faq_url">http://www.vsnmobil.com/support/v-alrt/faq/span</string>
+    <!-- initial screen -->
+    <string name="setup_my_device">Configura tu dispositivo</string>
+    <string name="take_the_tour">Toma el tour\u0020</string>
+    <string name="buy_on_vsnmobil">Cómpralo en vsnmobil.com</string>
+
+    <!-- take a tour slide -->
+    <string name="slide1_title">Tendrás ayuda con presionar un botón</string>
+    <string name="slide1_content">V.ALRT es un dispositivo capaz de enviar mensajes y llamadas urgentes con simplemente presionar un botón. Su detector de caídas te proporcionará  una mayor tranquilidad.
+</string>
+    <string name="slide2_title">Donde quiera que estés</string>
+    <string name="slide2_content">Tan sencillo que es perfecto para personas de cualquier edad. Resistente al agua para que lo uses donde quieras!!!
+</string>
+    <string name="slide3_title">V.ALRT está contigo</string>
+    <string name="slide3_content">Nuestros hijos son el mayor tesoro y aunque quisiéramos protegerlos todo el día, eso es simplemente imposible. Afortunadamente V.ALRT puede hacerlo.</string>
+    <string name="slide4_title">Tu tranquilidad</string>
+    <string name="slide4_content">Hay momentos en que nos encontramos en sitios solitarios, pero con V.ALRT tu nunca estás  solo. Con presionar un botón podrás buscar ayuda de manera rápida y discreta.</string>
+    <string name="slide5_title">Como funciona</string>
+    <string name="slide5_content">Presiona arriba para aprender como funciona el V.ALRT.</string>
+    <!-- Advance settings screen -->
+    <string name="skip">Saltar\u0020</string>
+    <string name="panic_sound">Alerta de Emergencia</string>
+    <string name="valrt_phone_silent_content">Puedes escoger para que el V.ALRT o tu teléfono no provea ninguna notificación visual o de sonido.</string>
+    <string name="advance_settings">Opciones Avanzadas</string>
+    <string name="advance_settings_heading">Avanzadas</string>
+    <string name="edit_contact_warning">Precaución, si cambias el país es necesario seleccionar contactos del nuevo país.</string>
+    <!-- Add contacts screen -->
+    <string name="dialing_format">Asegúrate que el número de tu contacto tiene el formato correcto para marcación internacional</string>
+    <string name="edit_number">Editar el numero</string>
+    <string name="edit_contact_alert_message">El número debe comenzar con el signo + y seguido por el código del país. El código para México es +52, Brasil es +55, España es +34, Colombia es +57 y India es +91</string>
+    <string name="edit_number_validation">Formato de número es incorrecto</string>
+    <!-- Country spinner -->
+    <string name="country_prompt">Selecciona el País</string>
+    <string name="country">País</string>
+
+    <!-- Turn V.ALRT on /off -->
+    <string name="toogle_on">Encendido</string>
+    <string name="toogle_off">Apagado</string>
+    <string name="turn_off">Apagado</string>
+    <string name="valrt_turn_on">V.ALRT Encendido</string>
+    <string name="valrt_turn_off">V.ALRT Apagado</string>
+    <string name="turn_off_alert_message">Al apagar el V.ALRT se deshabilita el funcionamiento del dispositivo. Es necesario mantener encendido el V.ALRT para que la alerta pueda ser enviada.</string>
+
+    <!-- First Configuration SMS to all contacts. -->
+    <string name="tell_your_contact_that_you_are_part_of_valrt_circle">Dile a tus contactos que ellos son parte de tu círculo de protección con V.ALRT.</string>
+    <string name="you_are_part_of_valrt_circle">\u0022Te inclui en mis contactos del V.ALRT. Si necesito ayuda vas a recibir una llamada y/o SMS del V.ALRT con mi ubicacion.\u0022</string>
+    <string name="initial_setup_message">Te inclui en mis contactos del V.ALRT. Si necesito ayuda vas a recibir una llamada y/o un SMS con mi ubicacion.</string>
+    <string name="send">Enviar</string>
+    <string name="sending_sms">Envío de SMS</string>
+    <!-- Device Tracking -->
+    <string name="tracker">Rastreador</string>
+    <string name="tracker_msg_content">Activa la alerta en caso que el V.ALRT salga del área de cobertura</string>
+    <string name="tracker_screen_info">En el modo Rastreador el teléfono podrá vibrar o activar un tono de alerta predefinido cuando el V.ALRT sale del área de cobertura. Por favor asegúrate que el teléfono no está en modo silencioso.</string>
+    <string name="loud_tone">Sonido de Alerta</string>
+    <string name="vibrate">Vibrar</string>
+    <string name="tracker_on">Encendido</string>
+    <string name="tracker_off">Apagado</string>
+    <string name="tracker_in_progress">Rastreador En curso</string>
+    <string name="tracker_Canceled">Rastreador Cancelado</string>
+    <string name="phone_checked_device_tracker_message">Sonido en el modo Rastreador sera desactivado.</string>
+    <string name="tracker_tone_checked_silentmode_on_message">Modo Silencioso para tú teléfono será desactivado.</string>
+    <string name="accept">Aceptar</string>
+    <string name="valrt_service_label">V.ALRT Background Service</string>
+
+</resources>

@@ -1,0 +1,125 @@
+image: gitlab.hvsn.io:4567/demos/mobile-apps/android/android-docker/android-26/ndk-r18b:28.0.3
+stages:
+  - build
+  - test
+  - internal
+  - alpha
+  - beta
+  - production
+
+before_script:
+    - cd Vsnmobilstudio
+    
+    - apt-get remove --assume-yes bundler
+    - apt-get autoremove --assume-yes
+    - gem install bundler
+
+    - bundle update fastlane
+    - echo "$signing_jks_file_hex" | xxd -r -p - > app/android-signing-keystore.jks
+    - echo "$signing_jks_file_hex" | xxd -r -p - > android-signing-keystore.jks
+    - ls -alth 
+    - ls -alth app/
+    - pwd
+    - export GRADLE_USER_HOME=`pwd`/.gradle
+    - echo $GOOGLE_PLAY_SERVICE_ACCOUNT_API_KEY_JSON > ~/google_play_api_key.json
+    
+after_script:
+    - rm -f app/android-signing-keystore.jks || true
+    - rm -f android-signing-keystore.jks || true
+    - rm -f ~/google_play_api_key.json   
+
+cache:
+  paths:
+     - Vsnmobilstudio/.gradle/wrapper
+     - Vsnmobilstudio/.gradle/caches
+     - Vsnmobilstudio/gradle/caches
+
+
+.build_job:
+  variables:
+   KEYSTORE_FILENAME: "android-signing-keystore.jks"    
+   VERSION_CODE: "${CI_PIPELINE_IID}"
+   VERSION_SHA: "${CI_COMMIT_SHORT_SHA}"
+  stage: build
+ # before_script:
+    # We store this binary file in a variable as hex with this command, `xxd -p gitter-android-app.jks`
+    # Then we convert the hex back to a binary file
+    # We add 100 to get this high enough above current versionCodes that are published
+    #- "export VERSION_CODE=$((100 + $CI_PIPELINE_IID)) && echo $VERSION_CODE"
+    #- "export VERSION_SHA=`echo ${CI_COMMIT_SHA:0:8}` && echo $VERSION_SHA"
+    # Make the changelog
+    #- cp ./fastlane/metadata/android/en-US/changelogs/CURRENT_VERSION.txt "./fastlane/metadata/android/en-GB/changelogs/$VERSION_CODE.txt"
+    # We allow the remote push and MR creation to fail because the other job could create it
+    # and it's not strictly necessary (we just need the file locally for the CI build)
+    #- ./ci-scripts/create-changlog-mr.sh || true
+    # Because we allow the MR creation to fail, just make sure we are back in the right repo state
+    #- git checkout "$CI_COMMIT_SHA"
+  tags:
+    - docker
+    - linux
+  
+  artifacts:
+    paths:
+    - Vsnmobilstudio/app/build/outputs/apk/*/*/*.apk
+
+buildDebug:
+  extends: .build_job
+  script:
+    - env | grep GRADLE
+    - pwd
+    - bundle exec fastlane android buildDebug
+    - ls -alth .gradle/
+
+buildRelease:
+  extends: .build_job
+  script:
+    - bundle exec fastlane android buildRelease
+    
+testDebug:
+  extends: .build_job
+  stage: test
+  dependencies: 
+   - buildDebug
+  script:
+   - bundle exec fastlane android test
+
+.publish_template:
+  tags:
+   - docker
+   - linux
+  when: manual
+  
+
+publishInternal:
+  extends: .publish_template
+  stage: internal
+  dependencies:
+   - buildRelease
+  script:
+    - bundle exec fastlane android internal
+
+.promote_job:
+  extends: .publish_template
+  dependencies: []
+
+promoteAlpha:
+  extends: .promote_job
+  stage: alpha
+  script:
+    - bundle exec fastlane android promote_internal_to_alpha
+
+promoteBeta:
+  extends: .promote_job
+  stage: beta
+  script:
+    - bundle exec fastlane android promote_alpha_to_beta
+  
+promoteProduction:
+  extends: .promote_job
+  stage: production
+  # We only allow production promotion on `master` because
+  # it has its own production scoped secret variables
+  only:
+   - master
+  script:
+    - bundle exec fastlane android promote_beta_to_production

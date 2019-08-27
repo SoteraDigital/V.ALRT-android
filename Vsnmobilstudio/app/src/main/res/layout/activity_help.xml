@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_main"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_header_size" >
+
+        <TextView
+            android:id="@+id/help_title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="@string/help"
+            android:textColor="@color/purple_color"
+            android:textSize="@dimen/heading_text_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/help_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/help_title_textview"
+            android:layout_alignParentLeft="true"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/img_back_arrow"
+            android:gravity="center"
+            android:padding="@dimen/btn_padding"
+            android:text="@string/back"
+            android:textColor="@color/violet_color"
+            android:textSize="@dimen/next_back_text_size"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <!-- Box starts -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/header_spacing" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/help_quic_start_guide_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_rounded_corner_gray_bg"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/help_quic_start_guide_icon_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_quickstart"
+                    android:contentDescription="@string/app_name" />
+
+                <ImageView
+                    android:id="@+id/help_quic_start_guide_arrow_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/img_light_arrow"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/help_quic_start_guide_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/help_quic_start_guide_icon_imageview"
+                    android:text="@string/quick_start_guide"
+                    android:textColor="@color/violet_color"
+                    android:textSize="@dimen/medium_text_size"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/help_instruction_video_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="@dimen/spacing"
+                android:background="@drawable/shape_rounded_corner_gray_bg"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/help_instruction_video_icon_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_instruction_video"
+                    android:contentDescription="@string/app_name" />
+
+                <ImageView
+                    android:id="@+id/help_instruction_video_arrow_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/img_light_arrow"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/help_instruction_video_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/help_instruction_video_icon_imageview"
+                    android:text="@string/instructional_video"
+                    android:textColor="@color/violet_color"
+                    android:textSize="@dimen/medium_text_size"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/help_faq_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="@dimen/spacing"
+                android:background="@drawable/shape_rounded_corner_gray_bg"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/help_faq_icon_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_faq"
+                    android:contentDescription="@string/app_name" />
+
+                <ImageView
+                    android:id="@+id/help_faq_arrow_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/img_light_arrow"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/help_faq_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/help_faq_icon_imageview"
+                    android:text="@string/faq"
+                    android:textColor="@color/violet_color"
+                    android:textSize="@dimen/medium_text_size"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/help_product_info_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="@dimen/spacing"
+                android:background="@drawable/shape_rounded_corner_gray_bg"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/help_product_info_icon_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_product_information"
+                    android:contentDescription="@string/app_name" />
+
+                <ImageView
+                    android:id="@+id/help_product_info_arrow_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/img_light_arrow"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/help_product_info_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/help_product_info_icon_imageview"
+                    android:text="@string/product_information"
+                    android:textColor="@color/violet_color"
+                    android:textSize="@dimen/medium_text_size"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/help_terms_condition_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="@dimen/spacing"
+                android:background="@drawable/shape_rounded_corner_gray_bg"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/help_terms_condition_icon_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_termsandcondition"
+                    android:contentDescription="@string/app_name" />
+
+                <ImageView
+                    android:id="@+id/help_terms_condition_arrow_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/img_light_arrow"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/help_terms_condition_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/help_terms_condition_icon_imageview"
+                    android:text="@string/terms_conditions"
+                    android:textColor="@color/violet_color"
+                    android:textSize="@dimen/medium_text_size"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/help_history_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="@dimen/spacing"
+                android:background="@drawable/shape_rounded_corner_gray_bg"
+                android:padding="10dp"
+                android:paddingBottom="@dimen/spacing" >
+
+                <ImageView
+                    android:id="@+id/help_history_icon_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_history"
+                    android:contentDescription="@string/app_name" />
+
+                <ImageView
+                    android:id="@+id/help_history_arrow_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/img_light_arrow"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/help_history_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/help_history_icon_imageview"
+                    android:text="@string/historylog"
+                    android:textColor="@color/violet_color"
+                    android:textSize="@dimen/medium_text_size"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

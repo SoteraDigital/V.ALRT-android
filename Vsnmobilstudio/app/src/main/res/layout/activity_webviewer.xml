@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/webviewer_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_header_size" >
+
+        <Button
+            android:id="@+id/webviewer_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/webviewer_title_textview"
+            android:layout_alignParentLeft="true"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/img_back_arrow"
+            android:gravity="center"
+            android:padding="@dimen/btn_padding"
+            android:text="@string/back"
+            android:textColor="@color/violet_color"
+            android:textSize="@dimen/next_back_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/webviewer_title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/purple_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/webviewer_header_layout"
+        android:orientation="vertical" >
+
+        <WebView
+            android:id="@+id/webviewer_webview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/webviewer_imageview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/app_name"
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/webviewer_progressbar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/webviewer_nointernet_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/not_internet_connection"
+            android:textColor="@color/gray_color"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</RelativeLayout>

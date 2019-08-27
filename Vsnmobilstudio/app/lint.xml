@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="CutPasteId" severity="ignore">
+        <ignore path="src/com/vsnmobil/valrt/activities/SettingsActivity.java" />
+        <ignore path="src/com/vsnmobil/valrt/activities/SettingsActivity.java" />
+    </issue>
+    <issue id="IconColors" severity="ignore" />
+    <issue id="IconDensities" severity="ignore" />
+    <issue id="MissingTranslation">
+        <ignore path="res/values/arrays.xml" />
+        <ignore path="res/values/arrays.xml" />
+        <ignore path="res/values/strings.xml" />
+    </issue>
+    <issue id="Overdraw" severity="ignore">
+        <ignore path="res/layout/activity_addcontact.xml" />
+    </issue>
+    <issue id="Typos" severity="ignore" />
+    <issue id="UnusedResources" severity="ignore" />
+</lint>

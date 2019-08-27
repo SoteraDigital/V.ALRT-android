@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dialog_margin"
+    android:background="@drawable/shape_rounded_corner_white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/alert_title_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="@color/violet_color"
+        android:textSize="@dimen/normal_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/alert_content_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="@color/violet_color"
+        android:textSize="@dimen/normal_text_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/purple_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_header_size"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/alert_no_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/no"
+            android:textColor="@color/violet_color"
+            android:textSize="@dimen/normal_text_size"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/purple_color" />
+
+        <Button
+            android:id="@+id/alert_yes_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/yes"
+            android:textColor="@color/violet_color"
+            android:textSize="@dimen/normal_text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

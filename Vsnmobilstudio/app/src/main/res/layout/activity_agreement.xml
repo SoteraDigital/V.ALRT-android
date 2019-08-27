@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main" >
+
+    <RelativeLayout
+        android:id="@+id/agreement_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_header_size" >
+
+        <TextView
+            android:id="@+id/agreement_title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/agreement"
+            android:textColor="@color/purple_color"
+           android:textSize="@dimen/heading_text_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/agreement_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/agreement_title_textview"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/img_next_enable_arrow"
+            android:gravity="center"
+            android:padding="@dimen/btn_padding"
+            android:text="@string/next"
+            android:textColor="@color/violet_color"
+            android:textSize="@dimen/next_back_text_size"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/centre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/agreement_header_layout"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/header_spacing"
+        android:background="@drawable/shape_rounded_corner_white"
+        android:orientation="vertical"
+        android:paddingBottom="10dp" >
+
+        <ProgressBar
+            android:id="@+id/agreement_progressbar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/agreement_nointernet_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/not_internet_connection"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/agreement_accept_title_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/additional_requirement_title"
+            android:textColor="@color/violet_color"
+            android:textSize="@dimen/welcome_text_size"
+            android:textStyle="bold" />
+
+        <WebView
+            android:id="@+id/agreement_webview"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/agreement_accept_title_textview"
+            android:layout_margin="20dp"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>

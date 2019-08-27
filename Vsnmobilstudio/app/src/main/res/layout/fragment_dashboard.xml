@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_main" >
+
+    <RelativeLayout
+        android:id="@+id/dashboard_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_header_size"
+        android:layout_alignParentTop="true" >
+
+        <Button
+            android:id="@+id/dashboard_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/dashboard_device_name_textview"
+            android:layout_alignParentLeft="true"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/img_back_arrow"
+            android:gravity="center"
+            android:padding="@dimen/btn_padding"
+            android:text="@string/back"
+            android:textColor="@color/violet_color"
+            android:textSize="@dimen/next_back_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dashboard_device_name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="@string/device_name"
+            android:textColor="@color/purple_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dashboard_find_me_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dashboard_header_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/header_spacing"
+        android:background="@drawable/shape_rounded_corner_gray_bg"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/dashboard_find_me_icon_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_findme"
+            android:contentDescription="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/dashboard_find_me_arrow_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/img_light_arrow"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/dashboard_find_me_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/dashboard_find_me_icon_imageview"
+            android:text="@string/find_me"
+            android:textColor="@color/violet_color"
+            android:textSize="@dimen/medium_text_size"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dashboard_change_name_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dashboard_fall_detection_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/spacing"
+        android:background="@drawable/shape_rounded_corner_gray_bg"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/dashboard_change_name_icon_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_rename"
+            android:contentDescription="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/dashboard_change_name_arrow_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/img_light_arrow"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/dashboard_change_name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/dashboard_change_name_icon_imageview"
+            android:text="@string/change_name"
+            android:textColor="@color/violet_color"
+            android:textSize="@dimen/medium_text_size"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dashboard_fall_detection_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dashboard_find_me_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/spacing"
+        android:background="@drawable/shape_rounded_corner_gray_bg"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/dashboard_fall_detection_icon_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_fall_detection"
+            android:contentDescription="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/dashboard_fall_detection_arrow_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/img_light_arrow"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/dashboard_fall_detection_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/dashboard_fall_detection_icon_imageview"
+            android:text="@string/fall_detection"
+            android:textColor="@color/violet_color"
+            android:textSize="@dimen/medium_text_size"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dashboard_forget_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dashboard_change_name_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/spacing"
+        android:background="@drawable/shape_rounded_corner_gray_bg"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/dashboard_forget_icon_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_forget_me"
+            android:contentDescription="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/dashboard_forget_arrow_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/img_light_arrow"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/dashboard_forget_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/dashboard_forget_icon_imageview"
+            android:text="@string/forget_me"
+            android:textColor="@color/violet_color"
+            android:textSize="@dimen/medium_text_size"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/dashboard_footer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@color/purple_color" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" >
+
+            <TextView
+                android:id="@+id/falldetection_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/falldetect_status"
+                android:textColor="@color/violet_color"
+                android:textSize="14sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/fall_detect_status_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dip"
+                android:layout_toRightOf="@+id/falldetection_textview"
+                android:gravity="left"
+                android:text="@string/disabled"
+                android:textColor="@color/violet_color"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/battery_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:layout_toLeftOf="@+id/signal_imageview"
+                android:background="@drawable/img_battery"
+                android:contentDescription="@string/app_name"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/signal_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/img_signal"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

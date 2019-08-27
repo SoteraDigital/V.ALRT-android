@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main" >
+
+    <RelativeLayout
+        android:id="@+id/termsandcondition_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_header_size" >
+
+        <Button
+            android:id="@+id/termsandcondition_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/termsandcondition_title_textview"
+            android:layout_alignParentLeft="true"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/img_back_arrow"
+            android:gravity="center"
+            android:padding="@dimen/btn_padding"
+            android:text="@string/back"
+            android:textColor="@color/violet_color"
+            android:textSize="@dimen/next_back_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/termsandcondition_title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/terms_plus_conditions"
+            android:textColor="@color/purple_color"
+            android:textSize="@dimen/heading_text_size"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/termsandcondition_container_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/termsandcondition_header_layout"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/header_spacing"
+        android:background="@drawable/shape_rounded_corner_white"
+        android:orientation="vertical"
+        android:paddingBottom="10dp" >
+
+        <ProgressBar
+            android:id="@+id/termsandcondition_progressbar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/termsandcondition_nointernet_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/not_internet_connection"
+            android:textColor="@color/gray_color" />
+
+        <WebView
+            android:id="@+id/termsandcondition_webview_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="12dip"
+            android:layout_marginTop="5dip" />
+    </RelativeLayout>
+
+</RelativeLayout>

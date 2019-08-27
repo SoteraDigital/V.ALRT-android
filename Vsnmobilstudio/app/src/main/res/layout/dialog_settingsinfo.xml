@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dialog_margin"
+    android:background="@drawable/shape_rounded_corner_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/settingsinfo_header_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/alert_title_height" >
+
+        <TextView
+            android:id="@+id/settingsinfo_title_textview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center|bottom"
+            android:textColor="@color/violet_color"
+            android:textSize="@dimen/normal_text_size"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/settingsinfo_message_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settingsinfo_header_layout"
+        android:layout_marginBottom="10dip" >
+
+        <TextView
+            android:id="@+id/settingsinfo_message_textview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="5dip"
+            android:textColor="@color/violet_color"
+            android:textSize="@dimen/normal_text_size" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/settingsinfo_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/settingsinfo_message_layout"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@color/purple_color" />
+
+    <RelativeLayout
+        android:id="@+id/settingsinfo_footer_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/settingsinfo_divider" >
+
+        <Button
+            android:id="@+id/settingsinfo_ok_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/ok"
+            android:textColor="@color/violet_color"
+            android:textSize="@dimen/normal_text_size"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

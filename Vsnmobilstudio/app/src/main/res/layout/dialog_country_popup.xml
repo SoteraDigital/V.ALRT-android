@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_rounded_corner_with_violet_storke"
+    android:orientation="vertical"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp" >
+
+    <TextView
+        android:id="@+id/country_title_textview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alert_title_msg_height"
+        android:layout_marginTop="3dp"
+        android:gravity="center|center_vertical"
+        android:text="@string/country_prompt"
+        android:textColor="@color/violet_color"
+        android:textSize="@dimen/normal_text_size"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/purple_color" />
+
+    <ListView
+        android:id="@+id/country_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"
+        android:listSelector="@color/gray_color"
+        android:scrollbars="none" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/violet_color" />
+
+    <Button
+        android:id="@+id/country_cancel_button"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/alert_title_msg_height"
+        android:layout_marginTop="3dp"
+        android:background="@android:color/transparent"
+        android:gravity="center|center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/cancel"
+        android:textSize="@dimen/normal_text_size"
+        android:textColor="@color/violet_color" />
+
+</LinearLayout>

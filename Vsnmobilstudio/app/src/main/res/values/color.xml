@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Text colors -->
+    <color name="black_color">#000000</color>
+    <color name="white_color">#FFFFFF</color>
+    <color name="violet_color">#504a67</color>
+    <color name="purple_color">#e4bc54</color>
+    <color name="green_color">#73de75</color>
+    <!-- App default backgrounf color -->
+    <color name="app_background_color">#DADADA</color>
+    <!-- Alert in progress cancel button -->
+    <color name="red_button">#c3121d</color>
+
+    <!-- Pop up background color -->
+    <color name="gray_color">#DADADA</color>
+    <color name="light_gray">#D2D2D2</color>
+    <color name="transparent_black">#80000000</color>
+
+</resources>

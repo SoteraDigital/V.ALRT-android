@@ -1,0 +1,17 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light"></style>
+
+    <!-- Application theme -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowBackground">@color/app_background_color</item>
+        <item name="android:fontFamily">helvetica-neue</item>
+    </style>
+
+    <!-- Dialog theme with rounded corners -->
+    <style name="ThemeWithCorners" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+</resources>

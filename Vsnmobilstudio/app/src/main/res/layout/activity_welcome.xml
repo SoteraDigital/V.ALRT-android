@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main" >
+
+    <RelativeLayout
+        android:id="@+id/welcome_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_header_size" >
+
+        <TextView
+            android:id="@+id/welcome_title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/welcome"
+            android:textColor="@color/purple_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/welcome_next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/welcome_title_textview"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/img_next_disable_arrow"
+            android:gravity="center"
+            android:padding="@dimen/btn_padding"
+            android:text="@string/next"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/next_back_text_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/welcome_title_textview"
+            android:layout_alignParentLeft="true"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_action_share"
+            android:gravity="center"
+            android:onClick="shareToEmail"
+            android:padding="@dimen/btn_padding"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/next_back_text_size"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/welcome_container_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/welcome_header_layout"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="@dimen/header_spacing"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rounded_corner_white"
+            android:paddingBottom="10dp"
+            tools:ignore="UselessParent" >
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:id="@+id/welcome_nointernet_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/not_internet_connection"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/welcome_accept_content_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="10dip"
+                android:text="@string/terms_conditions"
+                android:textColor="@color/violet_color"
+                android:textSize="@dimen/welcome_text_size"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/welcome_terms_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dip"
+                android:layout_marginTop="35dip" >
+
+                <WebView
+                    android:id="@+id/welcome_webview_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@android:color/transparent"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" >
+
+                <CheckBox
+                    android:id="@+id/welcome_accept_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dip"
+                    android:button="@drawable/selector_checkbox_white"
+                    android:enabled="false"
+                    android:gravity="bottom|center_horizontal|right" />
+
+                <TextView
+                    android:id="@+id/welcome_heading_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toLeftOf="@+id/welcome_accept_checkbox"
+                    android:text="@string/accept_tnc"
+                    android:textColor="@color/violet_color"
+                    android:textSize="@dimen/welcome_text_size"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

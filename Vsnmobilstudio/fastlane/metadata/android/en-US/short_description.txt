@@ -1,0 +1,1 @@
+Sends text messages and make calls at the touch of a small V.ALRT button.

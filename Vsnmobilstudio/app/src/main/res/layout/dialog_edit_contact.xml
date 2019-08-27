@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dialog_margin"
+    android:background="@drawable/shape_rounded_corner_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/edit_contact_title_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/alert_title_msg_height"
+        android:layout_marginTop="3dp"
+        android:gravity="center|center_vertical"
+        android:maxLength="90"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/edit_number"
+        android:textColor="@color/violet_color"
+        android:textSize="@dimen/normal_text_size"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_contact_text_edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_rounded_corner_with_storke"
+        android:digits="+0123456789"
+        android:hint=""
+        android:imeOptions="actionDone"
+        android:inputType="phone"
+        android:maxLength="20"
+        android:padding="10dp"
+        android:textColor="@color/violet_color"
+        android:textSize="@dimen/normal_text_size" />
+
+    <View
+        android:id="@+id/edit_contact_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/purple_color" />
+
+    <TextView
+        android:id="@+id/edit_contact_message_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="10dp"
+        android:text="@string/edit_contact_alert_message"
+        android:textColor="@color/violet_color"
+        android:textSize="@dimen/normal_text_size" />
+
+</LinearLayout>
